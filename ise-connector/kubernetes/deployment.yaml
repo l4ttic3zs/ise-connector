@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ise-connector
-        image: docker.io/bmzsombi/ise-connector
+        image: docker.io/bmzsombi/ise-connector:latest
         ports:
         - containerPort: 80
         

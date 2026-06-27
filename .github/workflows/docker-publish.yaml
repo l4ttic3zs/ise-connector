@@ -33,7 +33,7 @@ jobs:
         with:
           context: ./ise-connector/
           push: true
-          tags: bmzsombi/ise-connector:${{ steps.vars.outputs.sha_short }}
+          tags: bmzsombi/ise-connector:latest # ${{ steps.vars.outputs.sha_short }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
