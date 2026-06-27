@@ -1,0 +1,1 @@
+helm install my-release oci://ghcr.io/netbox-community/netbox-chart/netbox

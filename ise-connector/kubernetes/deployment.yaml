@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ise-connector
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: ise-connector
+  template:
+    metadata:
+      labels:
+        app: ise-connector
+    spec:
+      containers:
+      - name: ise-connector
+        image: docker.io/bmzsombi/ise-connector
+        ports:
+        - containerPort: 80
+        
